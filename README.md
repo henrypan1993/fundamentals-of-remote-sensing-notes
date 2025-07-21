@@ -1,3 +1,8 @@
+---
+title: Remote Sensing Fundamentals Notes
+---
+
+
 # Remote Sensing Fundamentals: Learning Notes & Interactive Satellite Explorer
 
 This repository is a comprehensive resource for learning the fundamentals of remote sensing, combining detailed study notes with interactive satellite band visualization tools.
