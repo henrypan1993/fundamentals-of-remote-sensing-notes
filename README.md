@@ -45,6 +45,18 @@ This repository is a comprehensive resource for learning the fundamentals of rem
 - **🛠️ Additional Scripts:**  
   - Static visualizations, polarization simulation, reflectance modeling, and more for hands-on learning.
 
+## 🌐 Interactive Online Demo
+
+Try the interactive dashboard for Landsat 9 and Sentinel-2 band comparison and atmospheric transmission:
+
+👉 [Live Demo on Render](https://fundamentals-of-remote-sensing-notes.onrender.com)
+
+- Select different satellites to view their spectral bands and atmospheric windows
+- Hover over colored bands for detailed information
+- Works on both desktop and mobile browsers
+
+> Note: The free Render instance may take a few seconds to wake up if idle.
+
 ---
 
 ## Quick Start
