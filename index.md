@@ -450,7 +450,7 @@ Spectral resolution defines how finely a sensor can distinguish electromagnetic 
 
 High spatial resolution reduces swath width, leading to lower temporal resolution, **mainly due to geometric and orbital constraints rather than sensor quality**. Wider and clearer imaging can be improved by larger optics and satellite constellations, but single-satellite performance is fundamentally limited by orbital mechanics and diffraction
 
-<img src="assets/Advanced Himawari Imager (AHI) Scanning Pattern.png" alt="Advanced Himawari Imager (AHI) Scanning Pattern" style="zoom:30%;" />
+<img src="assets/Advanced Himawari Imager (AHI) Scanning Pattern.png" alt="Advanced Himawari Imager (AHI) Scanning Pattern" style="zoom:50%;" />
 
 AHI alternates between full-disk scans and targeted “high-frequency” rectangular regions to monitor key areas such as Japan or typhoon zones. These priority regions can be updated by ground commands, but the number and size are constrained by scanning mechanics and operational priorities.
 
