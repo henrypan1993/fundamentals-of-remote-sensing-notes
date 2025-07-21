@@ -367,11 +367,10 @@ def create_interactive_dashboard():
     
     return app
 
+app = create_interactive_dashboard()
+server = app.server
+
 if __name__ == "__main__":
-    # 创建交互式仪表板
-    app = create_interactive_dashboard()
-    
-    # 运行应用
     print("Starting interactive dashboard...")
     print("Please open http://127.0.0.1:8050 in your browser")
     app.run_server(debug=True, port=8050)
