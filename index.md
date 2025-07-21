@@ -21,10 +21,6 @@ This document provides a comprehensive overview of remote sensing fundamentals, 
 
 ### Earth is a System of Systems
 
-![image-20250720100810255](C:\Users\Lenovo\AppData\Roaming\Typora\typora-user-images\image-20250720100810255.png)
-
-*Image Source:  NASA*
-
 > Earth is the planet NASA studies more than any other. Like our own bodies, the Earth is made up of connected, but different systems that interact in complex ways
 
 ### Why Study Earth from Space?
@@ -37,7 +33,7 @@ Electromagnetic radiation is the energy carrier that makes remote sensing possib
 
 ## Module 2: What is Remote Sensing?
 
-![FoRS - 1](assets/FoRS - 1.jpeg)
+![FoRS-1](assets/FoRS-1.jpeg)
 
 *Image Source: ARSET*
 
@@ -241,7 +237,7 @@ A Spectral Signature is an object's "fingerprint."
 - **Color Perception**: The color of a material equals the part of visible light it does **not** absorb; plants look green because chlorophyll absorbs red & blue light but reflects green.
 - **Trace Gas（痕量气体） vs GHG**: Greenhouse gases are a subset of trace gases; all GHGs are trace gases, but not all trace gases contribute to the greenhouse effect.
 
-![PercentReflectance_Graph_v5.8_VegOnly (1)](assets/PercentReflectance_Graph_v5.8_VegOnly (1).jpg)
+![PercentReflectance_Graph_v5.8_VegOnly](assets/PercentReflectance_Graph_v5.8_VegOnly.jpg)
 
 *Image Source:  ARSET*
 
@@ -322,7 +318,7 @@ The atmosphere behaves as an independent material with absorption, scattering, a
 
 ## Module 3: How Does Remote Sensing Work?
 
-### ![FoRS - 2](assets/FoRS - 2.jpeg)
+### ![FoRS-2](assets/FoRS-2.jpeg)
 
 *Image Source: NASA*
 
@@ -454,7 +450,7 @@ Spectral resolution defines how finely a sensor can distinguish electromagnetic 
 
 High spatial resolution reduces swath width, leading to lower temporal resolution, **mainly due to geometric and orbital constraints rather than sensor quality**. Wider and clearer imaging can be improved by larger optics and satellite constellations, but single-satellite performance is fundamentally limited by orbital mechanics and diffraction
 
-<img src="assets/Advanced Himawari Imager (AHI) Scanning Pattern.png" alt="Advanced Himawari Imager (AHI) Scanning Pattern" style="zoom:50%;" />
+<img src="assets/Advanced Himawari Imager (AHI) Scanning Pattern.png" alt="Advanced Himawari Imager (AHI) Scanning Pattern" style="zoom:30%;" />
 
 AHI alternates between full-disk scans and targeted “high-frequency” rectangular regions to monitor key areas such as Japan or typhoon zones. These priority regions can be updated by ground commands, but the number and size are constrained by scanning mechanics and operational priorities.
 
@@ -487,7 +483,7 @@ Trade-offs in Satellite Design for Different Missions
 
 ## Module 4: How Can I Use Remote Sensing Data?
 
-![FoRS - 3](assets/FoRS - 3.jpeg)
+![FoRS-3](assets/FoRS-3.jpeg)
 
 *Image Source: NASA*
 
@@ -503,33 +499,7 @@ Remote sensing data is typically visualized as **satellite imagery**, which may 
 
 > Radiance is often quantified using a Brightness Temperature scale, expressed in degrees Celsius
 
-$$
-\underbrace{
-\begin{bmatrix}
-\mathbf{b}_{\lambda_1} \\
-\mathbf{b}_{\lambda_2} \\
-\vdots \\
-\mathbf{b}_{\lambda_m}
-\end{bmatrix}
-}_{\text{Observation vector } (\mathbf{b})}
-=
-\underbrace{
-\begin{bmatrix}
-\mathbf{A}_{\lambda_1} & 0 & \cdots & 0 \\
-0 & \mathbf{A}_{\lambda_2} & \cdots & 0 \\
-\vdots & \vdots & \ddots & \vdots \\
-0 & 0 & \cdots & \mathbf{A}_{\lambda_m}
-\end{bmatrix}
-}_{\text{System block-diagonal matrix } (\mathbf{A})}
-\underbrace{
-\begin{bmatrix}
-\mathbf{x}_{\lambda_1} \\
-\mathbf{x}_{\lambda_2} \\
-\vdots \\
-\mathbf{x}_{\lambda_m}
-\end{bmatrix}
-}_{\text{Surface reflectance vector } (\mathbf{x})}
-$$
+![matrix_equation](assets/matrix_equation.png)
 
 The satellite imaging process is a linear mapping **b = Ax**, where **A** encodes atmospheric and sensor effects, and **x** represents the intrinsic surface reflectance as a tensor reshaped into a vector
 
