@@ -2,7 +2,7 @@
 
 ## Summary
 
-![image-20250722014913116](Learning Notes Fundamentals of Remote Sensing.assets/image-20250722014913116.png)
+![image-20250722014913116](assets/image-20250722014913116.png)
 
 **Usage Notes:**
 - Figures without explicit source attribution are original works by the author; most are accompanied by Python source code.
@@ -15,7 +15,7 @@ This document provides a comprehensive overview of remote sensing fundamentals, 
 
 ## Module 1: Why Earth Observations?
 
-![FoRS-0](Learning Notes Fundamentals of Remote Sensing.assets/FoRS-0.png)
+![FoRS-0](assets/FoRS-0.png)
 
 *Image Source: NASA*
 
@@ -37,7 +37,7 @@ Electromagnetic radiation is the energy carrier that makes remote sensing possib
 
 ## Module 2: What is Remote Sensing?
 
-![FoRS - 1](Learning Notes Fundamentals of Remote Sensing.assets/FoRS - 1.jpeg)
+![FoRS - 1](assets/FoRS - 1.jpeg)
 
 *Image Source: ARSET*
 
@@ -79,7 +79,7 @@ These cones, concentrated in the macula(黄斑区) of the retina(视网膜), are
 
 > Electromagnetic radiation is often referred to as light, electromagnetic energy, or electromagnetic waves
 
-![Figure_1](Learning Notes Fundamentals of Remote Sensing.assets/Figure_1.png)
+![Figure_1](assets/Figure_1.png)
 
 > Electromagnetic waves can be described by their frequency, wavelength, and amplitude
 
@@ -113,7 +113,7 @@ These cones, concentrated in the macula(黄斑区) of the retina(视网膜), are
 
 Remote sensing treats materials as functions of electromagnetic wave interaction. By analyzing how input radiation is reflected, absorbed, scattered, transmitted, or emitted, we can mathematically model and retrieve the physical properties of surfaces.
 
-![image-20250720155924335](Learning Notes Fundamentals of Remote Sensing.assets/image-20250720155924335.png)
+![image-20250720155924335](assets/image-20250720155924335.png)
 
 *Image Source:  ARSET*
 
@@ -174,13 +174,13 @@ print(f"Model Output: {result}")
 
 #### DEMO: illustrates the fundamental remote sensing process
 
-![](Learning Notes Fundamentals of Remote Sensing.assets/Figure_2.png)
+![](assets/Figure_2.png)
 
 Note: Electromagnetic waves (input) interact with different surface materials, producing distinct reflection patterns (output signals). The simulated spectra show how vegetation strongly absorbs red light but reflects near-infrared, water remains dark across all bands, and soil exhibits moderate reflectance increasing with wavelength. These signals, once captured by sensors, can be modeled to retrieve surface properties, forming the basis of remote sensing analysis.
 
 > **Polarization** is another property of electromagnetic waves: the measurement of the electromagnetic field's alignment
 
-![Figure_3](Learning Notes Fundamentals of Remote Sensing.assets/Figure_3.png)
+![Figure_3](assets/Figure_3.png)
 
 💡 *Inspiration #3*
 
@@ -192,7 +192,7 @@ Note: Electromagnetic waves (input) interact with different surface materials, p
 
 > Humans can only see visible light, which is a very narrow range of the spectrum (0.0035%)
 
-![EMS_Spectrum-v2](Learning Notes Fundamentals of Remote Sensing.assets/EMS_Spectrum-v2.jpg)
+![EMS_Spectrum-v2](assets/EMS_Spectrum-v2.jpg)
 
 *Image Source:  ARSET*
 
@@ -241,7 +241,7 @@ A Spectral Signature is an object's "fingerprint."
 - **Color Perception**: The color of a material equals the part of visible light it does **not** absorb; plants look green because chlorophyll absorbs red & blue light but reflects green.
 - **Trace Gas（痕量气体） vs GHG**: Greenhouse gases are a subset of trace gases; all GHGs are trace gases, but not all trace gases contribute to the greenhouse effect.
 
-![PercentReflectance_Graph_v5.8_VegOnly (1)](Learning Notes Fundamentals of Remote Sensing.assets/PercentReflectance_Graph_v5.8_VegOnly (1).jpg)
+![PercentReflectance_Graph_v5.8_VegOnly (1)](assets/PercentReflectance_Graph_v5.8_VegOnly (1).jpg)
 
 *Image Source:  ARSET*
 
@@ -257,7 +257,7 @@ A Spectral Signature is an object's "fingerprint."
 
 - Calculated from **specific wavelength reflectances** to describe **greenness** (density & health) at the **pixel level** in satellite images.
 
-![PercentReflectance_FINAL_WaterOnly](Learning Notes Fundamentals of Remote Sensing.assets/PercentReflectance_FINAL_WaterOnly.jpg)
+![PercentReflectance_FINAL_WaterOnly](assets/PercentReflectance_FINAL_WaterOnly.jpg)
 
 *Image Source:  ARSET*
 
@@ -277,7 +277,7 @@ A Spectral Signature is an object's "fingerprint."
 - Monitoring **algae, water temperature, water levels, pollutants, suspended particles**.
 - Essential for understanding **marine and freshwater ecosystems**.
 
-![PercentReflectance_FINAL_SoilOnly](Learning Notes Fundamentals of Remote Sensing.assets/PercentReflectance_FINAL_SoilOnly.jpg)
+![PercentReflectance_FINAL_SoilOnly](assets/PercentReflectance_FINAL_SoilOnly.jpg)
 
 Image Source:  ARSET
 
@@ -322,7 +322,7 @@ The atmosphere behaves as an independent material with absorption, scattering, a
 
 ## Module 3: How Does Remote Sensing Work?
 
-### ![FoRS - 2](Learning Notes Fundamentals of Remote Sensing.assets/FoRS - 2.jpeg)
+### ![FoRS - 2](assets/FoRS - 2.jpeg)
 
 *Image Source: NASA*
 
@@ -384,7 +384,7 @@ A geostationary satellite is like a giant flashlight fixed over the equator: it 
   - LEO Polar-Orbiting and Non-Sun-Synchronous
     - The main difference is that the polar-orbiting satellite does not maintain a consistent local solar time over its ground track as a Sun-synchronous satellite does.
 
-![OrbitTrack_LandSat9_GLOBAL_withInset_20240801_annotated.gif](Learning Notes Fundamentals of Remote Sensing.assets/OrbitTrack_LandSat9_GLOBAL_withInset_20240801_annotated.gif.png)
+![OrbitTrack_LandSat9_GLOBAL_withInset_20240801_annotated.gif](assets/OrbitTrack_LandSat9_GLOBAL_withInset_20240801_annotated.gif.png)
 
 A Sun-synchronous orbit guarantees consistent local solar time for observations but not frequent revisits; high-resolution sensors often have a narrow swath, resulting in longer revisit times despite the satellite’s frequent orbital passes.
 
@@ -434,7 +434,7 @@ Active sensors are powerful but costly and best for structural or geometric stud
 
 The finest spatial resolution occurs at nadir because, like a flashlight shining vertically, the same sensor energy is concentrated on a smaller ground area, whereas at oblique angles it spreads over a larger area, reducing resolution.
 
-![SpatialResolution_3imageComparison_version2](Learning Notes Fundamentals of Remote Sensing.assets/SpatialResolution_3imageComparison_version2.png)
+![SpatialResolution_3imageComparison_version2](assets/SpatialResolution_3imageComparison_version2.png)
 
 *Source: csc.NOAA.gov*
 
@@ -454,7 +454,7 @@ Spectral resolution defines how finely a sensor can distinguish electromagnetic 
 
 High spatial resolution reduces swath width, leading to lower temporal resolution, **mainly due to geometric and orbital constraints rather than sensor quality**. Wider and clearer imaging can be improved by larger optics and satellite constellations, but single-satellite performance is fundamentally limited by orbital mechanics and diffraction
 
-<img src="Learning Notes Fundamentals of Remote Sensing.assets/Advanced Himawari Imager (AHI) Scanning Pattern.png" alt="Advanced Himawari Imager (AHI) Scanning Pattern" style="zoom:50%;" />
+<img src="assets/Advanced Himawari Imager (AHI) Scanning Pattern.png" alt="Advanced Himawari Imager (AHI) Scanning Pattern" style="zoom:50%;" />
 
 AHI alternates between full-disk scans and targeted “high-frequency” rectangular regions to monitor key areas such as Japan or typhoon zones. These priority regions can be updated by ground commands, but the number and size are constrained by scanning mechanics and operational priorities.
 
@@ -487,7 +487,7 @@ Trade-offs in Satellite Design for Different Missions
 
 ## Module 4: How Can I Use Remote Sensing Data?
 
-![FoRS - 3](Learning Notes Fundamentals of Remote Sensing.assets/FoRS - 3.jpeg)
+![FoRS - 3](assets/FoRS - 3.jpeg)
 
 *Image Source: NASA*
 
@@ -535,7 +535,7 @@ The satellite imaging process is a linear mapping **b = Ax**, where **A** encode
 
 Satellites capture individual spectral bands as grayscale images; RGB composites are created later for visualization, while many satellites record far more than just three visible bands
 
-![ColorBar_vs_RGB_colorbar_SpectralDiff_AHI_3x5](Learning Notes Fundamentals of Remote Sensing.assets/ColorBar_vs_RGB_colorbar_SpectralDiff_AHI_3x5.png)
+![ColorBar_vs_RGB_colorbar_SpectralDiff_AHI_3x5](assets/ColorBar_vs_RGB_colorbar_SpectralDiff_AHI_3x5.png)
 
 *Source: Himawari-8 AHI*
 
@@ -545,7 +545,7 @@ False color imagery assigns non-visible or non-natural bands to RGB channels to 
 
 A color bar is a visual legend that maps colors to numerical values, helping interpret data intensity or magnitude in scientific and remote sensing images.
 
-![ColorBar_vs_RGB_RGB_NtMicro_AHI_3x5](Learning Notes Fundamentals of Remote Sensing.assets/ColorBar_vs_RGB_RGB_NtMicro_AHI_3x5.png)
+![ColorBar_vs_RGB_RGB_NtMicro_AHI_3x5](assets/ColorBar_vs_RGB_RGB_NtMicro_AHI_3x5.png)
 
 *Source: Himawari-8 AHI*
 
@@ -609,11 +609,11 @@ Satellite remote sensing offers wide coverage, long-term comparable data, multip
 
 ### Observations to Applications
 
-![image-20250722003658579](Learning Notes Fundamentals of Remote Sensing.assets/image-20250722003658579.png)
+![image-20250722003658579](assets/image-20250722003658579.png)
 
 *Image Source: ARSET*
 
-![image-20250722003727208](Learning Notes Fundamentals of Remote Sensing.assets/image-20250722003727208.png)
+![image-20250722003727208](assets/image-20250722003727208.png)
 
 *Image Source: ARSET*
 
@@ -623,7 +623,7 @@ the vegetation get healthier (green) as we go from spring into summer, and less 
 
 ### Activity: Introduction to Worldview
 
-![image-671c0a86b6f36](Learning Notes Fundamentals of Remote Sensing.assets/image-671c0a86b6f36.png)
+![image-671c0a86b6f36](assets/image-671c0a86b6f36.png)
 *Image Source: ARSET*
 
 - **Layers, Events and Data Panel**: Layers work like Photoshop layers (toggle & reorder); Events are curated thematic datasets; Data tab enables downloading raw data for analysis
@@ -633,7 +633,7 @@ the vegetation get healthier (green) as we go from spring into summer, and less 
 
 ### Activity: Explore Wildfire Imagery in Worldview
 
-![image-20250722012027986](Learning Notes Fundamentals of Remote Sensing.assets/image-20250722012027986.png)
+![image-20250722012027986](assets/image-20250722012027986.png)
 *Image Source: ARSET*
 
 ## Reference
