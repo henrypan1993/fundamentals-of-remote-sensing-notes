@@ -606,6 +606,18 @@ the vegetation get healthier (green) as we go from spring into summer, and less 
 ![image-20250722012027986](assets/image-20250722012027986.png)
 *Image Source: ARSET*
 
+## Interactive Online Dashboard
+
+An interactive dashboard for comparing Landsat 9 and Sentinel-2 spectral bands with atmospheric transmission is now available online:
+
+👉 [Click here to try the live demo](https://fundamentals-of-remote-sensing-notes.onrender.com)
+
+- Select different satellites to view their spectral bands and atmospheric windows
+- Hover over colored bands for detailed information
+- Works on both desktop and mobile browsers
+
+> Note: If the site loads slowly, it may be due to Render's free instance waking up from sleep. Please wait a few seconds.
+
 ## Reference
 
 *ARSET - Fundamentals of Remote Sensing*. NASA Applied Remote Sensing Training Program (ARSET).
