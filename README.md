@@ -2,99 +2,117 @@
 title: Remote Sensing Fundamentals Notes
 ---
 
+# Remote Sensing Fundamentals: Study Notes & Interactive Satellite Band Tools
 
-# Remote Sensing Fundamentals: Learning Notes & Interactive Satellite Explorer
-
-This repository is a comprehensive resource for learning the fundamentals of remote sensing, combining detailed study notes with interactive satellite band visualization tools.
-
----
-
-## Project Structure
-
-```plaintext
-/
-├── README.md
-├── requirements.txt
-├── notes/
-│   └── Fundamentals_of_Remote_Sensing.md
-├── scripts/
-│   ├── landsat_sentinel_interactive.py
-│   ├── landsat_sentinel_static.py
-│   ├── ahi_scanning_rhythm.py
-│   ├── polarization_vector_projection.py
-│   ├── toy_reflectance_simulation.py
-│   └── electromagnetic_wave_components.py
-└── Learning Notes Fundamentals of Remote Sensing.assets/
-    └── ... (all image assets)
-```
+This repository is a comprehensive resource for learning the fundamentals of remote sensing, combining detailed study notes with interactive and static visualization tools. It is designed for students, educators, and enthusiasts in remote sensing, earth observation, and geoscience.
 
 ---
 
-## Highlights
+## 🌟 Key Resources
 
-- **📝 In-depth Learning Notes:**  
-  - `notes/Fundamentals_of_Remote_Sensing.md`  
-  - Covers electromagnetic spectrum, satellite sensors, atmospheric effects, and more.
-  - Richly illustrated with custom diagrams and annotated images.
+- **📖 Online Study Notes (Highly Recommended)**  
+  👉 [https://henrypan1993.github.io/fundamentals-of-remote-sensing-notes/](https://henrypan1993.github.io/fundamentals-of-remote-sensing-notes/)  
+  A systematic and richly illustrated guide covering the electromagnetic spectrum, satellite sensors, atmospheric effects, and classic remote sensing cases.
 
-- **🛰️ Interactive Satellite Band Explorer:**  
-  - `scripts/landsat_sentinel_interactive.py`  
-  - Visualizes and compares Landsat 9 & Sentinel-2 spectral bands with atmospheric transmission windows.
-  - Built with Plotly Dash for browser-based interactivity.
+- **📝 Local Study Materials**  
+  See the `assets/` directory for all images and diagrams, or visit the online notes above for the best reading experience.
 
-- **🛠️ Additional Scripts:**  
-  - Static visualizations, polarization simulation, reflectance modeling, and more for hands-on learning.
+---
 
 ## 🌐 Interactive Online Demo
 
-Try the interactive dashboard for Landsat 9 and Sentinel-2 band comparison and atmospheric transmission:
-
-👉 [Live Demo on Render](https://fundamentals-of-remote-sensing-notes.onrender.com)
-
-- Select different satellites to view their spectral bands and atmospheric windows
-- Hover over colored bands for detailed information
-- Works on both desktop and mobile browsers
+- **🛰️ Try the Interactive Dashboard Online:**  
+  👉 [https://fundamentals-of-remote-sensing-notes.onrender.com/](https://fundamentals-of-remote-sensing-notes.onrender.com/)  
+  Explore and compare Landsat 9 and Sentinel-2 spectral bands with atmospheric transmission windows directly in your browser.  
+  **Features:**
+  - Select different satellites to view their spectral bands and atmospheric windows
+  - Hover over colored bands for detailed information
+  - Works on both desktop and mobile browsers
+  - No installation required
 
 > Note: The free Render instance may take a few seconds to wake up if idle.
 
 ---
 
-## Quick Start
+## 📁 Project Structure
+
+```plaintext
+/
+├── README.md                # Project documentation (this file)
+├── requirements.txt         # Python dependencies
+├── app.py                   # Main entry point (if used)
+├── assets/                  # All image and diagram resources
+├── scripts/                 # Interactive and static visualization scripts
+│   ├── landsat_sentinel_interactive.py      # Interactive Landsat/Sentinel band explorer (Plotly Dash)
+│   ├── landsat_sentinel_static.py           # Static Landsat/Sentinel band comparison
+│   ├── ahi_scanning_rhythm.py               # AHI scanning rhythm and imaging principle
+│   ├── polarization_vector_projection.py    # Polarization vector projection demo
+│   ├── toy_reflectance_simulation.py        # Simple reflectance simulation
+│   └── electromagnetic_wave_components.py   # Electromagnetic wave component visualization
+└── Procfile                  # Deployment configuration (for cloud platforms)
+```
+
+---
+
+## 🚀 Quick Start
 
 1. **Install dependencies:**
    ```bash
    pip install -r requirements.txt
    ```
 
-2. **Run the interactive dashboard:**
+2. **Run the interactive dashboard locally:**
    ```bash
    python scripts/landsat_sentinel_interactive.py
    ```
    Then open [http://127.0.0.1:8050](http://127.0.0.1:8050) in your browser.
 
-3. **Browse the learning notes:**
-   - Open `notes/Fundamentals_of_Remote_Sensing.md` with any Markdown reader.
+3. **Or try the online demo:**
+   - Visit [https://fundamentals-of-remote-sensing-notes.onrender.com/](https://fundamentals-of-remote-sensing-notes.onrender.com/)
+
+4. **Browse the study notes:**
+   - For the best experience, visit the [Online Study Notes](https://henrypan1993.github.io/fundamentals-of-remote-sensing-notes/)
+   - Or explore the images in the `assets/` directory
 
 ---
 
-## Who is this for?
+## 🛰️ Main Script Descriptions
 
-- Students and educators in remote sensing, earth observation, and geoscience.
-- Anyone interested in satellite data, electromagnetic spectrum, and atmospheric science.
-- Learners seeking both theoretical knowledge and practical, visual tools.
+- `landsat_sentinel_interactive.py`  
+  Interactive visualization of Landsat 9 and Sentinel-2 bands and atmospheric windows (built with Plotly Dash).
+- `landsat_sentinel_static.py`  
+  Generates static comparison plots of Landsat/Sentinel bands and atmospheric windows.
+- `ahi_scanning_rhythm.py`  
+  Demonstrates the scanning rhythm and imaging principle of the Advanced Himawari Imager (AHI).
+- `polarization_vector_projection.py`  
+  Visualizes spatial projection of polarization vectors.
+- `toy_reflectance_simulation.py`  
+  Simple simulation of surface reflectance.
+- `electromagnetic_wave_components.py`  
+  Visualizes components of electromagnetic waves.
 
 ---
 
-## Contributing
+## 👥 Who Is This For?
 
-Contributions, corrections, and suggestions are welcome!  
-Feel free to open issues or submit pull requests.
+- Students and educators in remote sensing, earth observation, and geoscience
+- Anyone interested in satellite data, the electromagnetic spectrum, and atmospheric science
+- Self-learners seeking both theoretical knowledge and practical visualization tools
 
 ---
 
-## License
+## 🤝 Contributing & Feedback
 
-[MIT License](LICENSE) (or specify your license here)
+Contributions, corrections, and suggestions are welcome!
+- Please open an Issue or Pull Request for any feedback or improvements.
+- You can also leave comments via the [Online Study Notes](https://henrypan1993.github.io/fundamentals-of-remote-sensing-notes/) page.
+
+---
+
+## 📄 License
+
+[MIT License](LICENSE)  
+If the LICENSE file is missing, please add or specify your preferred license.
 
 ---
 
